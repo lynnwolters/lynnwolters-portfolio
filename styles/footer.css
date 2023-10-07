@@ -1,7 +1,7 @@
 /* FOOTER */
 
 footer {
-    height: 50vh;
+    height: 50dvh;
 
     display: flex;
     flex-direction: column;
