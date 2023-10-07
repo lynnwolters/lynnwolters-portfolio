@@ -1,7 +1,7 @@
 /* ABOUT */
 
 main section:nth-of-type(1) {
-    height: calc(100dvh - 5em);
+    height: calc(100svh - 5em);
 
     display: grid;
     grid-template-columns: var(--grid-columns);

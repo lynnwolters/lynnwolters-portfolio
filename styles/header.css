@@ -1,7 +1,7 @@
 /* HEADER */
 
 header {
-    height: calc(100dvh - 5em);
+    height: calc(100svh - 5em);
 
     display: flex;
     align-items: end;
