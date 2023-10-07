@@ -1,0 +1,39 @@
+/* HEADER */
+
+header {
+    height: calc(100vh - 5em);
+
+    display: flex;
+    align-items: end;
+
+    margin: var(--grid-margin-small) var(--grid-margin-big);
+}
+
+header h1 {
+    width: 100%;
+
+    font-family: var(--urbanist);
+    font-size: var(--font-size-1);
+    font-weight: 300;
+    line-height: 100%;
+    color: var(--secondary-color);
+}
+
+header h1 span {
+    display: flex;
+}
+
+header h1 span:nth-of-type(2)  {
+    justify-content: end;
+    align-items: center;
+}
+
+header h1 span:nth-of-type(2) img {
+    width: 20%;
+}
+
+@media (min-width: 1400px) {
+    header h1 span:nth-of-type(2) img {
+        width: 16%;
+    }
+}

@@ -1,0 +1,23 @@
+/* GO TO TOP */
+
+main section:nth-of-type(5) {
+    display: flex;
+    justify-content: end;
+
+    margin: var(--grid-margin-small) var(--grid-margin-big);
+}
+
+main section:nth-of-type(5) button {
+    width: 10em;
+    aspect-ratio: 1/1;
+
+    border: var(--border-1);
+    border-radius: 100%;
+
+    background-color: var(--primary-color);
+
+    font-size: var(--font-size-4);
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
