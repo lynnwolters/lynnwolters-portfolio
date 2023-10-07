@@ -1,12 +1,15 @@
 /* HEADER */
 
 header {
-    height: calc(100dvh - 5em);
+    height: 100svh;
 
     display: flex;
     align-items: end;
 
-    margin: var(--grid-margin-small) var(--grid-margin-big);
+    margin: 0 var(--grid-margin-big);
+    padding: var(--grid-padding-small) 0;
+
+    background-color: white;
 }
 
 header h1 {

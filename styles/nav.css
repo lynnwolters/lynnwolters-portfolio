@@ -7,6 +7,8 @@ body > nav {
 
     display: flex;
 
+    margin-top: var(--grid-margin-small);
+
     z-index: 1000;
 
     backdrop-filter: blur(.6em);
