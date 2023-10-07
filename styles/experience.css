@@ -82,7 +82,7 @@ main section:nth-of-type(3) div button h4 {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     main section:nth-of-type(3) h2 {
         margin: 0 10% 2em 10%;
     }

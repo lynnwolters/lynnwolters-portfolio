@@ -143,11 +143,11 @@ body {
 @media (max-width: 500px) {
     :root {
         /* FONT SIZES */
-        --font-size-1: 5em;
+        --font-size-1: 6.5em;
     }
 }
 
-.blobs {
+/* .blobs {
     position: absolute;
     z-index: -1;
-}
+} */
