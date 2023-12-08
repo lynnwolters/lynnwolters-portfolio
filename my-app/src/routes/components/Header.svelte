@@ -1,0 +1,32 @@
+<header>
+    <h1>
+        <span>Lynn</span>
+        <span>Wolters</span>
+    </h1>
+</header>
+
+<style>
+    header {
+        height: calc(100vh - 5em);
+
+        display: flex;
+        align-items: end;
+
+        margin: 2.5em 5em;
+    }
+
+    header h1 {
+        width: 100%;
+
+        font-family: var(--font-family-2);
+        font-size: var(--font-size-1);
+        font-weight: var(--font-weight-1);
+        line-height: 100%;
+        color: var(--color-1);
+    }
+
+    header h1 span:nth-of-type(2) {
+        display: flex;
+        justify-content: flex-end;
+    }
+</style>

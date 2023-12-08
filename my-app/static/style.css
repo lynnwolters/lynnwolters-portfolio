@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+body {
+    background-color: var(--color-3);
+
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    /* COLORS */
+    
+    --color-1: #282828;
+    --color-2: #FFFFFF;
+    --color-3: #FAFAFA;
+
+    /* FONTS */
+
+    /* font family's */
+    --font-family-1: 'DM Sans', sans-serif;
+    --font-family-2: 'Urbanist', sans-serif;
+
+    /* font sizes */
+    --font-size-1: 18.5em;
+    --font-size-2: 2.5em;
+    --font-size-3: 1.5em;
+    --font-size-4: .875em;
+
+    /* font weight */
+    --font-weight-1: 300;
+    --font-weight-2: 400;
+
+    /* text transform */
+    --text-transform-uppercase: uppercase;
+}
+
