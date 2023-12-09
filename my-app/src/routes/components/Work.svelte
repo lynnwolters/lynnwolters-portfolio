@@ -1,46 +1,42 @@
 <section>
     <div>
-        <h2>Services</h2>
+        <h2>Work</h2>
     </div>
-    
     <div>
         <article>
             <div>
-                <h3>Design</h3>
+                <h3>Playheart.io</h3>
                 <p>/ 01</p>
             </div>
+            <div><img src="" alt=""></div>
             <ul>
+                <li><p>UI/UX design</p></li>
+                <li><p>Illustration</p></li>
                 <li><p>Brand design</p></li>
-                <li><p>Design thinking</p></li>
-                <li><p>Prototyping</p></li>
-                <li><p>Wireframing</p></li>
-                <li><p>UI design</p></li>
-                <li><p>UX design</p></li>
             </ul>
         </article>
         <article>
             <div>
-                <h3>Development</h3>
+                <h3>Swapfiets</h3>
                 <p>/ 02</p>
             </div>
+            <div><img src="" alt=""></div>
             <ul>
-                <li><p>Html</p></li>
-                <li><p>Scss</p></li>
-                <li><p>Tailwind</p></li>
-                <li><p>JavaScript</p></li>
-                <li><p>Gsap</p></li>
-                <li><p>Svelte</p></li>
+                <li><p>UI/UX design</p></li>
+                <li><p>Illustration</p></li>
+                <li><p>Brand design</p></li>
             </ul>
         </article>
         <article>
             <div>
-                <h3>Full package</h3>
+                <h3>Coming soon...</h3>
                 <p>/ 03</p>
             </div>
+            <div><img src="" alt=""></div>
             <ul>
-                <li><p>Design +</p></li>
-                <li><p>Development +</p></li>
-                <li><p>Maintenance</p></li>
+                <li><p>UI/UX design</p></li>
+                <li><p>Illustration</p></li>
+                <li><p>Brand design</p></li>
             </ul>
         </article>
     </div>
@@ -78,7 +74,7 @@
 
     section > div:nth-of-type(2) article {
         grid-column: span 4;
-        height: 16em;
+        height: 28em;
 
         display: flex;
         justify-content: space-between;
@@ -90,19 +86,19 @@
         border-radius: 1em;
     }
 
-    section > div:nth-of-type(2) div {
+    section > div:nth-of-type(2) article div:nth-of-type(1) {
         display: flex;
         justify-content: space-between;
     }
 
-    section > div:nth-of-type(2) div h3 {
+    section > div:nth-of-type(2) article div:nth-of-type(1) h3 {
         font-family: var(--font-family-1);
         font-size: var(--font-size-3);
         font-weight: var(--font-weight-2);
         color: var(--color-1);
     }
 
-    section > div:nth-of-type(2) div p {
+    section > div:nth-of-type(2) article div:nth-of-type(1) p {
         font-family: var(--font-family-1);
         font-size: var(--font-size-4);
         font-weight: var(--font-weight-1);
