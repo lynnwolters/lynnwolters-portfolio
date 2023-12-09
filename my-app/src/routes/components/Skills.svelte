@@ -78,7 +78,7 @@
 
     section > div:nth-of-type(2) article {
         grid-column: span 4;
-        height: 16em;
+        aspect-ratio: 1/1;
 
         display: flex;
         justify-content: space-between;
@@ -119,5 +119,19 @@
         font-weight: var(--font-weight-1);
         color: var(--color-1);
         text-transform: var(--text-transform-uppercase);
+    }
+
+    section > div:nth-of-type(2) article:nth-of-type(2) {
+        margin-top: 8em;
+    }
+
+    @media (min-width: 1600px) {
+        section > div:nth-of-type(1) {
+            margin: 2.5em 16em;
+        }
+
+        section > div:nth-of-type(2) {
+            margin: 2.5em 16em;
+        }
     }
 </style>

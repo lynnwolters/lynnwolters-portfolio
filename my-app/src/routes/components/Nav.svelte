@@ -96,4 +96,10 @@
         color: var(--color-2);
         text-transform: var(--text-transform-uppercase);
     }
+
+    @media (min-width: 1600px) {
+        nav > ul {
+            margin: 0 16em;
+        }
+    }
 </style>

@@ -29,4 +29,10 @@
         display: flex;
         justify-content: flex-end;
     }
+
+    @media (min-width: 1600px) {
+        header {
+            margin: 2.5em 16em;
+        }
+    }
 </style>

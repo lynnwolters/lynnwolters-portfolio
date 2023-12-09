@@ -98,4 +98,10 @@
     footer nav ul li:nth-of-type(3) {
         margin-left: 1em;
     }
+
+    @media (min-width: 1600px) {
+        footer {
+            margin: 2.5em 16em;
+        }
+    }
 </style>

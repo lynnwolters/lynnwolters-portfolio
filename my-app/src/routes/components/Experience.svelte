@@ -38,7 +38,7 @@
     section {
         height: 100vh;
 
-        margin: 0 5em;
+        margin: 2.5em 5em;
     }
 
     section h2 {
@@ -99,5 +99,11 @@
         font-weight: var(--font-weight-1);
         color: var(--color-1);
         text-transform: var(--text-transform-uppercase);
+    }
+
+    @media (min-width: 1600px) {
+        section {
+            margin: 2.5em 16em;
+        }
     }
 </style>
