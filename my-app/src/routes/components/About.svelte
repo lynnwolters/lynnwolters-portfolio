@@ -62,4 +62,10 @@
             margin: 2.5em 16em;
         }
     }
+
+    @media (max-width: 1000px) {
+        section div {
+            grid-column: span 3;
+        }
+    }
 </style>

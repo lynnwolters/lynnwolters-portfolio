@@ -58,6 +58,8 @@
     }
 
     section > div:nth-of-type(1) h2 {
+        opacity: .2;
+
         font-family: var(--font-family-2);
         font-size: var(--font-size-1);
         font-weight: var(--font-weight-1);
@@ -132,6 +134,16 @@
 
         section > div:nth-of-type(2) {
             margin: 2.5em 16em;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        section > div:nth-of-type(2) article {
+            grid-column: span 6;
+        }
+
+        section > div:nth-of-type(2) article:nth-of-type(2) {
+            margin-top: 0em
         }
     }
 </style>
