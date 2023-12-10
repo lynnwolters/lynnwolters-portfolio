@@ -104,4 +104,26 @@
             margin: 2.5em 16em;
         }
     }
+
+    @media (max-width: 1000px) {
+        footer {
+            margin: 2.5em 2.5em;
+        }
+
+        footer h2 {
+            grid-column: span 9;
+        }
+    }
+
+    @media (max-width: 650px) {
+        footer {
+            gap: 1.5em;
+
+            margin: 1.5em 1.5em;
+        }
+
+        footer h2 {
+            grid-column: span 10;
+        }
+    }
 </style>

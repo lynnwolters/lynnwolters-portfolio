@@ -138,12 +138,47 @@
     }
 
     @media (max-width: 1000px) {
+        section > div:nth-of-type(1) {
+            margin: 2.5em 2.5em;
+        }
+
+        section > div:nth-of-type(2) {
+            height: fit-content;
+            
+            margin: 2.5em 2.5em;
+        }
+
         section > div:nth-of-type(2) article {
             grid-column: span 6;
         }
 
         section > div:nth-of-type(2) article:nth-of-type(2) {
             margin-top: 0em
+        }
+    }
+
+    @media (max-width: 650px) {
+        section > div:nth-of-type(1) {
+            margin: 1.5em 1.5em;
+        }
+
+        section > div:nth-of-type(2) {
+            gap: 1.5em;
+
+            margin: 1.5em 1.5em;
+        }
+
+        section > div:nth-of-type(2) article {
+            padding: 1.5em;
+
+            border-radius: .7em;
+        }
+    }
+
+    @media (max-width: 480px) {
+        section > div:nth-of-type(2) article {
+            grid-column: span 12;
+            aspect-ratio: 2/1;
         }
     }
 </style>

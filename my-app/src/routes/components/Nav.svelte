@@ -1,4 +1,4 @@
-<nav>
+<nav class="desktop-menu">
     <ul>
         <li><a href="#">Portfolio ©2023</a></li>
         <ul>
@@ -11,9 +11,19 @@
     </ul>
 </nav>
 
+<nav class="mobile-menu">
+    <button class="open-mobile-menu"></button>
+    <ul>
+        <button class="close-mobile-menu"></button>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+    </ul>
+</nav>
+
 <style>
     /* OUTER NAV */
-    nav {
+    .desktop-menu {
         width: 100vw;
         height: 5em;
 
@@ -28,7 +38,7 @@
     }
 
     /* INNER NAV */
-    nav > ul {
+    .desktop-menu > ul {
         width: 100%;
         height: 100%;
 
@@ -44,11 +54,11 @@
     }
 
     /* LOGO */
-    nav > ul > li:nth-of-type(1) {
+    .desktop-menu > ul > li:nth-of-type(1) {
         list-style: none;
     }
 
-    nav > ul > li:nth-of-type(1) a {
+    .desktop-menu > ul > li:nth-of-type(1) a {
         font-family: var(--font-family-1);
         font-size: var(--font-size-4);
         color: var(--color-1);
@@ -57,15 +67,15 @@
     }
 
     /* LINKS */
-    nav > ul > ul {
+    .desktop-menu > ul > ul {
         display: flex;
     }
 
-    nav > ul > ul li {
+    .desktop-menu > ul > ul li {
         list-style: none;
     }
 
-    nav > ul > ul li button {
+    .desktop-menu > ul > ul li button {
         margin: 0 1em;
         border: none;
 
@@ -78,11 +88,11 @@
     }
 
     /* BUTTON */
-    nav > ul > li:nth-of-type(2) {
+    .desktop-menu > ul > li:nth-of-type(2) {
         list-style: none;
     }
 
-    nav > ul > li:nth-of-type(2) button {
+    .desktop-menu > ul > li:nth-of-type(2) button {
         width: 8em;
         height: 3em;
 
@@ -98,8 +108,57 @@
     }
 
     @media (min-width: 1600px) {
-        nav > ul {
+        .desktop-menu > ul{
             margin: 0 16em;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        .desktop-menu > ul {
+            margin: 0 2.5em;
+        }
+    }
+
+    @media (max-width: 900px) {
+        .desktop-menu > ul {
+            height: 4em;
+        }
+    }
+
+    @media (max-width: 650px) {
+        .desktop-menu > ul {
+            height: 3.5em;
+        }
+
+        .desktop-menu > ul {
+            margin: 0 1.5em;
+            padding: 0 1.5em;
+
+            border-radius: .7em;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .desktop-menu {
+            display: none;
+        }
+
+        .mobile-menu {
+            width: 100vw;
+            height: 3.5em;
+
+            position: fixed;
+
+            border: solid .025em var(--color-1);
+            border-radius: .5em;
+
+            backdrop-filter: blur(8px);
+        }
+    }
+
+    @media (min-width: 480px) {
+        .mobile-menu {
+            display: none;
         }
     }
 </style>

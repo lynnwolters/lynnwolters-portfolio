@@ -106,4 +106,24 @@
             margin: 2.5em 16em;
         }
     }
+
+    @media (max-width: 1000px) {
+        section {
+            margin: 2.5em 2.5em;
+        }
+    }
+
+    @media (max-width: 650px) {
+        section {
+            margin: 1.5em 1.5em;
+        }
+
+        section ul li button {
+            height: 3.5em;
+
+            padding: 0 1.5em;;
+            
+            border-radius: .7em;
+        }
+    }
 </style>

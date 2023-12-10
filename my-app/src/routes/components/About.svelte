@@ -64,8 +64,39 @@
     }
 
     @media (max-width: 1000px) {
+        section {
+            margin: 2.5em 2.5em;
+        }
+
         section div {
             grid-column: span 3;
+        }
+    }
+
+    @media (max-width: 650px) {
+        section {
+            gap: 1.5em;
+
+            margin: 1.5em 1.5em;
+        }
+
+        section h2 {
+            grid-column: span 9;
+        }
+
+        section p {
+            grid-column-start: 7;
+            grid-column-end: 13;
+        }
+
+        section div img {
+            border-radius: .7em;
+        }
+    }
+
+    @media (max-width: 550px) {
+        section div {
+            grid-column: span 4;
         }
     }
 </style>
