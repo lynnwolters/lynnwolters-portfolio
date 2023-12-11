@@ -1,3 +1,21 @@
+<script>
+    import { onMount } from 'svelte'
+
+    onMount(async function() {
+        let openMobileMenu = document.querySelector('.open-mobile-menu')
+        let closeMobileMenu = document.querySelector('.close-mobile-menu')
+
+        openMobileMenu.addEventListener('click', toggleMenu)
+        closeMobileMenu.addEventListener('click', toggleMenu)
+
+        function toggleMenu() { 
+            console.log('click')
+            let mobileMenu = document.querySelector('.open-menu')
+            mobileMenu.classList.toggle('open')
+        }
+    })
+</script>
+
 <nav class="desktop-menu">
     <ul>
         <li><a href="#">Portfolio ©2023</a></li>
@@ -12,12 +30,15 @@
 </nav>
 
 <nav class="mobile-menu">
-    <button class="open-mobile-menu"></button>
     <ul>
-        <button class="close-mobile-menu"></button>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
+        <a href="#">Portfolio ©2023</a>
+        <button class="open-mobile-menu">Menu</button>
+        <ul class="open-menu">
+            <button class="close-mobile-menu">Close</button>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+        </ul>
     </ul>
 </nav>
 
@@ -138,6 +159,12 @@
         }
     }
 
+    @media (min-width: 480px) {
+        .mobile-menu {
+            display: none;
+        }
+    }
+
     @media (max-width: 480px) {
         .desktop-menu {
             display: none;
@@ -148,17 +175,101 @@
             height: 3.5em;
 
             position: fixed;
+            z-index: 999;
 
-            border: solid .025em var(--color-1);
-            border-radius: .5em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
             backdrop-filter: blur(8px);
         }
-    }
 
-    @media (min-width: 480px) {
-        .mobile-menu {
-            display: none;
+        .mobile-menu > ul {
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            margin: 0 1.5em;
+            padding: 0 1.5em;
+
+            border: solid .025em var(--color-1);
+            border-radius: .5em;
+        }
+
+        .mobile-menu > ul > a {
+            font-family: var(--font-family-1);
+            font-size: var(--font-size-4);
+            color: var(--color-1);
+            text-transform: var(--text-transform-uppercase);
+            text-decoration: none;
+        }
+
+        .mobile-menu > ul > button {
+            width: 8em;
+            height: 3em;
+
+            border: none;
+            border-radius: .5em;
+
+            background-color: var(--color-1);
+
+            font-family: var(--font-family-1);
+            font-size: var(--font-size-4);
+            color: var(--color-2);
+            text-transform: var(--text-transform-uppercase);
+        }
+
+        .open-menu {
+            width: 100vw;
+            height: 50vh;
+
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+
+            transform: translateX(-100%);
+            transition: 1s ease-in-out;
+
+            background-color: red;
+
+            z-index: 1000;
+        }
+
+        .open-menu button {
+            width: 8em;
+            height: 3em;
+
+            border: none;
+            border-radius: .5em;
+
+            background-color: var(--color-1);
+
+            font-family: var(--font-family-1);
+            font-size: var(--font-size-4);
+            color: var(--color-2);
+            text-transform: var(--text-transform-uppercase);
+        }
+
+        .open-menu li {
+            list-style: none;
+        }
+
+        .open-menu li a {
+            font-family: var(--font-family-1);
+            font-size: var(--font-size-2);
+            color: var(--color-1);
+            text-transform: var(--text-transform-uppercase);
+            text-decoration: none;
+        }
+
+        .open-menu.open {
+            transform: translateX(75%);
+            transition: 1s ease-in-out;
         }
     }
 </style>
