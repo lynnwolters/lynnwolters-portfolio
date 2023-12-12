@@ -1,14 +1,14 @@
 <script>
     import { onMount } from 'svelte'
 
-    onMount(async function() {
+    onMount(() => {
         let openMobileMenu = document.querySelector('.open-mobile-menu')
         let closeMobileMenu = document.querySelector('.close-mobile-menu')
 
         openMobileMenu.addEventListener('click', toggleMenu)
         closeMobileMenu.addEventListener('click', toggleMenu)
 
-        function toggleMenu() { 
+        function toggleMenu() {
             console.log('click')
             let mobileMenu = document.querySelector('.open-menu')
             mobileMenu.classList.toggle('open')
