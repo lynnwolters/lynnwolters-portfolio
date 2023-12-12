@@ -1,19 +1,9 @@
 <script>
-    import { onMount } from 'svelte'
+    let isMobileMenuOpen = false
 
-    onMount(() => {
-        let openMobileMenu = document.querySelector('.open-mobile-menu')
-        let closeMobileMenu = document.querySelector('.close-mobile-menu')
-
-        openMobileMenu.addEventListener('click', toggleMenu)
-        closeMobileMenu.addEventListener('click', toggleMenu)
-
-        function toggleMenu() {
-            console.log('click')
-            let mobileMenu = document.querySelector('.open-menu')
-            mobileMenu.classList.toggle('open')
-        }
-    })
+    function toggleMobileMenu() {
+        isMobileMenuOpen = !isMobileMenuOpen
+    }
 </script>
 
 <nav class="desktop-menu">
@@ -31,16 +21,22 @@
 
 <nav class="mobile-menu">
     <ul>
-        <a href="#">Portfolio ©2023</a>
-        <button class="open-mobile-menu">Menu</button>
-        <ul class="open-menu">
-            <button class="close-mobile-menu">Close</button>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-        </ul>
+        <li><a href="#">Portfolio ©2023</a></li>
+        <li><button on:click={toggleMobileMenu} class="toggle-menu">Menu</button></li>
     </ul>
 </nav>
+
+{#if isMobileMenuOpen}
+    <nav class="collapse-mobile-menu">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+{/if}  
 
 <style>
     /* OUTER NAV */
@@ -160,7 +156,7 @@
     }
 
     @media (min-width: 480px) {
-        .mobile-menu {
+        .mobile-menu, .collapse-mobile-menu {
             display: none;
         }
     }
@@ -184,7 +180,7 @@
             backdrop-filter: blur(8px);
         }
 
-        .mobile-menu > ul {
+        .mobile-menu ul {
             width: 100%;
             height: 100%;
 
@@ -196,80 +192,37 @@
             padding: 0 1.5em;
 
             border: solid .025em var(--color-1);
-            border-radius: .5em;
+            border-radius: .7em;
         }
 
-        .mobile-menu > ul > a {
-            font-family: var(--font-family-1);
-            font-size: var(--font-size-4);
-            color: var(--color-1);
-            text-transform: var(--text-transform-uppercase);
-            text-decoration: none;
-        }
+        .mobile-menu ul li {
+            display: flex;
+            align-items: center;
 
-        .mobile-menu > ul > button {
-            width: 8em;
-            height: 3em;
-
-            border: none;
-            border-radius: .5em;
-
-            background-color: var(--color-1);
-
-            font-family: var(--font-family-1);
-            font-size: var(--font-size-4);
-            color: var(--color-2);
-            text-transform: var(--text-transform-uppercase);
-        }
-
-        .open-menu {
-            width: 100vw;
-            height: 50vh;
-
-            position: fixed;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-
-            transform: translateX(-100%);
-            transition: 1s ease-in-out;
-
-            background-color: red;
-
-            z-index: 1000;
-        }
-
-        .open-menu button {
-            width: 8em;
-            height: 3em;
-
-            border: none;
-            border-radius: .5em;
-
-            background-color: var(--color-1);
-
-            font-family: var(--font-family-1);
-            font-size: var(--font-size-4);
-            color: var(--color-2);
-            text-transform: var(--text-transform-uppercase);
-        }
-
-        .open-menu li {
             list-style: none;
         }
 
-        .open-menu li a {
+        .mobile-menu li:nth-of-type(1) a {
             font-family: var(--font-family-1);
-            font-size: var(--font-size-2);
+            font-size: var(--font-size-4);
             color: var(--color-1);
             text-transform: var(--text-transform-uppercase);
-            text-decoration: none;
+            text-decoration: none; 
         }
 
-        .open-menu.open {
-            transform: translateX(75%);
-            transition: 1s ease-in-out;
+        .mobile-menu li:nth-of-type(2) button {
+            width: 8em;
+            height: 3em;
+
+            border: none;
+            border-radius: .5em;
+
+            background-color: var(--color-1);
+
+            font-family: var(--font-family-1);
+            font-size: var(--font-size-4);
+            color: var(--color-2);
+            text-transform: var(--text-transform-uppercase);
         }
     }
 </style>
