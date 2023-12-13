@@ -20,14 +20,13 @@
 </nav>
 
 <nav class="mobile-menu">
+
     <ul>
         <li><a href="#">Portfolio ©2023</a></li>
-        <li><button on:click={toggleMobileMenu} class="toggle-menu">Menu</button></li>
+        <li><button on:click={toggleMobileMenu}>Menu</button></li>
     </ul>
-</nav>
 
-{#if isMobileMenuOpen}
-    <nav class="collapse-mobile-menu">
+    {#if isMobileMenuOpen}
         <ul>
             <li><a href="#">About</a></li>
             <li><a href="#">Skills</a></li>
@@ -35,8 +34,9 @@
             <li><a href="#">Work</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-    </nav>
-{/if}  
+    {/if}  
+
+</nav>
 
 <style>
     /* OUTER NAV */
@@ -156,7 +156,7 @@
     }
 
     @media (min-width: 480px) {
-        .mobile-menu, .collapse-mobile-menu {
+        .mobile-menu {
             display: none;
         }
     }
@@ -167,22 +167,16 @@
         }
 
         .mobile-menu {
-            width: 100vw;
-            height: 3.5em;
+            width: calc(100vw - 6em);
 
             position: fixed;
-            z-index: 999;
-
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            backdrop-filter: blur(8px);
         }
 
-        .mobile-menu ul {
+        .mobile-menu ul:nth-of-type(1) {
             width: 100%;
-            height: 100%;
+            height: 3.5em;
+
+            z-index: 999;
 
             display: flex;
             justify-content: space-between;
@@ -193,24 +187,26 @@
 
             border: solid .025em var(--color-1);
             border-radius: .7em;
+
+            backdrop-filter: blur(8px);
         }
 
-        .mobile-menu ul li {
+        .mobile-menu ul:nth-of-type(1) li {
             display: flex;
             align-items: center;
 
             list-style: none;
         }
 
-        .mobile-menu li:nth-of-type(1) a {
+        .mobile-menu ul:nth-of-type(1) li a {
             font-family: var(--font-family-1);
             font-size: var(--font-size-4);
             color: var(--color-1);
             text-transform: var(--text-transform-uppercase);
-            text-decoration: none; 
+            text-decoration: none;
         }
 
-        .mobile-menu li:nth-of-type(2) button {
+        .mobile-menu ul:nth-of-type(1) li button {
             width: 8em;
             height: 3em;
 
@@ -223,6 +219,41 @@
             font-size: var(--font-size-4);
             color: var(--color-2);
             text-transform: var(--text-transform-uppercase);
+            text-decoration: none;
+        }
+
+        .mobile-menu ul:nth-of-type(2) {
+            width: 100%;
+            height: fit-content;
+
+            z-index: 998;
+
+            display: flex;
+            flex-direction: column;
+
+            margin: 0 1.5em;
+            margin-top: .5em;
+            padding: 1.5em 1.5em;
+
+            border: solid .025em var(--color-1);
+            border-radius: .7em;
+
+            backdrop-filter: blur(8px);
+        }
+
+        .mobile-menu ul:nth-of-type(2) li {
+            margin: .2em 0;
+
+            list-style: none;
+        }
+
+        .mobile-menu ul:nth-of-type(2) li a {
+            font-family: var(--font-family-1);
+            font-size: var(--font-size-2);
+            font-weight: var(--font-weight-2);
+            line-height: 100%;
+            color: var(--color-1);
+            text-decoration: none;
         }
     }
 </style>
