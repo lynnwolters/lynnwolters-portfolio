@@ -8,11 +8,11 @@
                 <h3>Playheart.io</h3>
                 <p>/ 01</p>
             </div>
-            <div><img src="" alt=""></div>
+            <div><img src="images/playheart.png" alt="playheart"></div>
             <ul>
                 <li><p>UI/UX design</p></li>
-                <li><p>Illustration</p></li>
-                <li><p>Brand design</p></li>
+                <li><p>Front-end development</p></li>
+                <li><p></p></li>
             </ul>
         </article>
         <article>
@@ -20,7 +20,7 @@
                 <h3>Swapfiets</h3>
                 <p>/ 02</p>
             </div>
-            <div><img src="" alt=""></div>
+            <div><img src="images/swapfiets.png" alt="swapfiets"></div>
             <ul>
                 <li><p>UI/UX design</p></li>
                 <li><p>Illustration</p></li>
@@ -34,9 +34,9 @@
             </div>
             <div><img src="" alt=""></div>
             <ul>
-                <li><p>UI/UX design</p></li>
-                <li><p>Illustration</p></li>
-                <li><p>Brand design</p></li>
+                <li><p></p></li>
+                <li><p></p></li>
+                <li><p></p></li>
             </ul>
         </article>
     </div>
@@ -76,7 +76,7 @@
 
     section > div:nth-of-type(2) article {
         grid-column: span 4;
-        aspect-ratio: 3/4;
+        min-height: 40vh;
 
         display: flex;
         justify-content: space-between;
@@ -123,6 +123,24 @@
         margin-top: 8em;
     }
 
+    /* IMG */
+    
+    section > div:nth-of-type(2) article div:nth-of-type(2) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 2em 0;
+    }
+
+    section > div:nth-of-type(2) article:nth-of-type(1) div:nth-of-type(2) img {
+        height: 100%;
+    }
+
+    section > div:nth-of-type(2) article:nth-of-type(2) div:nth-of-type(2) img {
+        height: 100%;
+    }
+
     @media (min-width: 1600px) {
         section > div:nth-of-type(1) {
             margin: 2.5em 16em;
@@ -165,6 +183,8 @@
         }
         
         section > div:nth-of-type(2) article {
+            grid-column: span 12;
+
             padding: 1.5em;
 
             border-radius: .7em;
@@ -174,10 +194,6 @@
     @media (max-width: 480px) {
         section > div:nth-of-type(2) {
             height: fit-content;
-        }
-
-        section > div:nth-of-type(2) article {
-            grid-column: span 12;
         }
     }
 </style>
