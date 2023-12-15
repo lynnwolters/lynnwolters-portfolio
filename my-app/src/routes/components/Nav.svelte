@@ -155,7 +155,7 @@
         }
     }
 
-    @media (min-width: 480px) {
+    @media (min-width: 481px) {
         .mobile-menu {
             display: none;
         }

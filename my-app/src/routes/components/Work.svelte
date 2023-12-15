@@ -172,6 +172,10 @@
     }
 
     @media (max-width: 480px) {
+        section > div:nth-of-type(2) {
+            height: fit-content;
+        }
+
         section > div:nth-of-type(2) article {
             grid-column: span 12;
         }

@@ -1,5 +1,5 @@
 <section>
-    <h2>While studying, I ga<span>ined over 2,5+ years <br> of work experience in this field.</span></h2>
+    <h2>While studying, I ga<span>ined over 2,5+ years of work experience in this field.</span></h2>
     <ul>
         <li>
             <button>
@@ -38,12 +38,17 @@
     section {
         height: 100vh;
 
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
         margin: 2.5em 5em;
     }
 
     section h2 {
-        height: 20%;
+        width: 60%;
 
+        margin: 0 auto 4em auto;
         text-align: center;
 
         font-family: var(--font-family-1);
@@ -55,14 +60,6 @@
 
     section h2 span {
         opacity: .4;
-    }
-
-    section ul {
-        height: 80%;
-
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
     }
 
     section ul li {
@@ -111,6 +108,10 @@
         section {
             margin: 2.5em 2.5em;
         }
+
+        section h2 {
+            width: 80%;
+        }
     }
 
     @media (max-width: 650px) {
@@ -124,6 +125,12 @@
             padding: 0 1.5em;;
             
             border-radius: .7em;
+        }
+    }
+
+    @media (max-width: 480px) {
+        section {
+            height: 75vh;
         }
     }
 </style>

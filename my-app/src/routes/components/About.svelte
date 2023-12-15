@@ -99,4 +99,10 @@
             grid-column: span 4;
         }
     }
+
+    @media (max-width: 480px) {
+        section {
+            height: 75vh;
+        }
+    }
 </style>

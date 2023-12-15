@@ -47,4 +47,10 @@
             margin: 1.5em 1.5em;
         }
     }
+
+    @media (max-width: 480px) {
+        header {
+            height: calc(100vh - 3em);
+        }
+    }
 </style>
