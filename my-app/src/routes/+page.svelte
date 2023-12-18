@@ -6,8 +6,10 @@
     import Experience from "./components/Experience.svelte"
     import Work from "./components/Work.svelte"
     import Footer from "./components/Footer.svelte"
+    import Noise from "./components/Noise.svelte"
 </script>
 
+<Noise />
 <Nav />
 <Header />
 <main>
