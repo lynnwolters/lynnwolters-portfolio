@@ -66,7 +66,7 @@
         margin: 0 5em;
         padding: 0 2.5em;
 
-        border: solid .025em var(--color-1);
+        border: solid .025em var(--color-4);
         border-radius: 1em;
     }
 

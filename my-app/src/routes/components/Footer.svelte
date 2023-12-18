@@ -46,7 +46,7 @@
 
         justify-self: end;
 
-        border: solid .025em var(--color-1);
+        border: solid .025em var(--color-4);
         border-radius: 100%;
 
         background-color: transparent;

@@ -3,32 +3,32 @@
     <ul>
         <li>
             <button>
-                <h3>Student Assistent</h3>
+                <h3>Student Assistent Front-end Development</h3>
+                <p>Sept 2023 - Now</p>
+            </button>
+        </li>
+        <li>
+            <button>
+                <h3>Intern at Lama Lama</h3>
                 <p>Apr 2023 - Jun 2023</p>
             </button>
         </li>
         <li>
             <button>
-                <h3>Student Assistent</h3>
-                <p>Apr 2023 - Jun 2023</p>
+                <h3>Intern at Stimmt Digital</h3>
+                <p>Sep 2019 - Jan 2020</p>
             </button>
         </li>
         <li>
             <button>
-                <h3>Student Assistent</h3>
-                <p>Apr 2023 - Jun 2023</p>
+                <h3>Intern at Nerds & Company</h3>
+                <p>Jan 2019 - Jul 2019</p>
             </button>
         </li>
         <li>
             <button>
-                <h3>Student Assistent</h3>
-                <p>Apr 2023 - Jun 2023</p>
-            </button>
-        </li>
-        <li>
-            <button>
-                <h3>Student Assistent</h3>
-                <p>Apr 2023 - Jun 2023</p>
+                <h3>Freelance</h3>
+                <p>2018 - 2019</p>
             </button>
         </li>
     </ul>
@@ -77,7 +77,7 @@
         margin: .5em 0;
         padding: 0 2.5em;;
 
-        border: solid .025em var(--color-1);
+        border: solid .025em var(--color-4);
         border-radius: 1em;
 
         background-color: transparent;
@@ -105,6 +105,8 @@
 
         section ul li button {
             height: 7em;
+
+            margin: 1em 0;
         }
     }
 

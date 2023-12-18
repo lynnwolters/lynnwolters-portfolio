@@ -1,7 +1,11 @@
 <header>
     <h1>
         <span>Lynn</span>
-        <span>Wolters</span>
+        <span>
+            W
+            <img src="images/badge.svg" alt="badge">
+            lters
+        </span>
     </h1>
 </header>
 
@@ -28,6 +32,13 @@
     header h1 span:nth-of-type(2) {
         display: flex;
         justify-content: flex-end;
+        align-items: center;
+    }
+
+    header h1 span:nth-of-type(2) img {
+        max-width: 100%;
+        
+        overflow: hidden;
     }
 
     @media (min-width: 1600px) {
