@@ -3,7 +3,9 @@
         <span>Lynn</span>
         <span>
             W
-            <img src="images/badge.svg" alt="badge">
+            <span>
+                <img src="images/badge.svg" alt="badge">
+            </span>
             lters
         </span>
     </h1>
@@ -29,16 +31,22 @@
         color: var(--color-1);
     }
 
-    header h1 span:nth-of-type(2) {
+    header h1 span:nth-of-type(2) {      
         display: flex;
         justify-content: flex-end;
         align-items: center;
     }
 
-    header h1 span:nth-of-type(2) img {
+    header h1 span:nth-of-type(2) > span {
         max-width: 100%;
-        
-        overflow: hidden;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header h1 span:nth-of-type(2) > span img {
+        width: 100%;
     }
 
     @media (min-width: 1600px) {
