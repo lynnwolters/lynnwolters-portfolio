@@ -7,7 +7,7 @@
 
 <style>
     header {
-        height: calc(100vh - 5em);
+        height: calc(100vh - 7em);
 
         display: flex;
         align-items: end;
@@ -32,7 +32,7 @@
 
     @media (min-width: 1600px) {
         header {
-            margin: 2.5em 16em;
+            margin: 3.5em 12em;
         }
     }
 

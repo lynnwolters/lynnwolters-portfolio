@@ -59,7 +59,11 @@
 
     @media (min-width: 1600px) {
         section {
-            margin: 2.5em 16em;
+            margin: 2.5em 12em;
+        }
+
+        section h2 {
+            grid-column: span 6;
         }
     }
 

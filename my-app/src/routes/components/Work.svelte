@@ -76,7 +76,7 @@
 
     section > div:nth-of-type(2) article {
         grid-column: span 4;
-        min-height: 40vh;
+        height: 40vh;
 
         display: flex;
         justify-content: space-between;
@@ -125,7 +125,9 @@
 
     /* IMG */
     
-    section > div:nth-of-type(2) article div:nth-of-type(2) {
+    section > div:nth-of-type(2) article div:nth-of-type(2) {    
+        overflow: hidden;
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -133,21 +135,22 @@
         margin: 2em 0;
     }
 
-    section > div:nth-of-type(2) article:nth-of-type(1) div:nth-of-type(2) img {
-        height: 100%;
-    }
-
-    section > div:nth-of-type(2) article:nth-of-type(2) div:nth-of-type(2) img {
-        height: 100%;
+    section > div:nth-of-type(2) article div:nth-of-type(2) img {
+        max-height: 100%;
+        max-width: 100%;
     }
 
     @media (min-width: 1600px) {
         section > div:nth-of-type(1) {
-            margin: 2.5em 16em;
+            margin: 2.5em 12em;
         }
 
         section > div:nth-of-type(2) {
-            margin: 2.5em 16em;
+            margin: 2.5em 12em;
+        }
+
+        section > div:nth-of-type(2) article {
+            height: 60vh;
         }
     }
 

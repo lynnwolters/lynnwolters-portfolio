@@ -101,7 +101,11 @@
 
     @media (min-width: 1600px) {
         footer {
-            margin: 2.5em 16em;
+            margin: 3.5em 12em;
+        }
+
+        footer h2 {
+            grid-column: span 6;
         }
     }
 

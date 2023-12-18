@@ -38,6 +38,18 @@ body {
     --text-transform-uppercase: uppercase;
 }
 
+@media (min-width: 1600px) {
+    :root {
+        /* FONTS */
+
+        /* font sizes */
+        --font-size-1: 24.5em;
+        --font-size-2: 3em;
+        --font-size-3: 2em;
+        --font-size-4: 1.2em;
+    }
+}
+
 @media (max-width: 1300px) {
     :root {
         /* FONTS */

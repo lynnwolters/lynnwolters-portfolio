@@ -127,13 +127,13 @@
         margin-top: 8em;
     }
 
-    @media (min-width: 1600px) {
+    @media (min-width: 1700px) {
         section > div:nth-of-type(1) {
-            margin: 2.5em 16em;
+            margin: 2.5em 12em;
         }
 
         section > div:nth-of-type(2) {
-            margin: 2.5em 16em;
+            margin: 2.5em 12em;
         }
     }
 

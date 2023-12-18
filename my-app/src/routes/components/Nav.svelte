@@ -125,8 +125,12 @@
     }
 
     @media (min-width: 1600px) {
-        .desktop-menu > ul{
-            margin: 0 16em;
+        .desktop-menu {
+            height: 7em;
+        }
+
+        .desktop-menu > ul {
+            margin: 0 12em;
         }
     }
 
