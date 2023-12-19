@@ -1,3 +1,20 @@
+<script>
+    import { onMount } from 'svelte'
+
+    onMount(() => {
+        const btn = document.querySelector('.button-animation-2')
+        const bg = btn.querySelector('.bg-button-animation-2')
+
+        const handleOrigin = (e) => {
+            bg.style.left = `${e.pageX - btn.offsetLeft}px`
+            bg.style.top = `${e.pageY - btn.offsetTop}px`
+        }
+
+        btn.addEventListener('mouseenter', handleOrigin)
+        btn.addEventListener('mouseleave', handleOrigin);
+    })
+</script>
+
 <section>
     <h2>While studying, I ga<span>ined over 2,5+ years of work experience in this field.</span></h2>
     <ul>

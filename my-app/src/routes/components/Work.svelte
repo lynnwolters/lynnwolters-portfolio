@@ -86,6 +86,8 @@
 
         border: solid .025em var(--color-4);
         border-radius: 1em;
+
+        cursor: pointer;
     }
 
     section > div:nth-of-type(2) article div:nth-of-type(1) {
@@ -122,8 +124,6 @@
     section > div:nth-of-type(2) article:nth-of-type(2) {
         margin-top: 8em;
     }
-
-    /* IMG */
     
     section > div:nth-of-type(2) article div:nth-of-type(2) {    
         overflow: hidden;

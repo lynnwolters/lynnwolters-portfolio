@@ -1,13 +1,13 @@
 <script>
-import { onMount } from 'svelte';
-import * as THREE from 'three';
+import { onMount } from 'svelte'
+import * as THREE from 'three'
 
 let container;
 let canvasEl;
 
-let renderer, scene, camera, clock, material;
-let pointer = new THREE.Vector2(0.5, 0.5);
-let targetPointer = new THREE.Vector2(0.5, 0.5);
+let renderer, scene, camera, clock, material
+let pointer = new THREE.Vector2(0.5, 0.5)
+let targetPointer = new THREE.Vector2(0.5, 0.5)
 
 const params = {
     coloring: 0.2,
@@ -176,7 +176,7 @@ function updateSceneSize() {
 
             vec3 col = vec3(1.0, 171.0/255.0, 213.0/255.0);
 
-            col = mix(col, vec3(1), smoothstep(2., .2, noise));
+            col = mix(col, vec3(1), smoothstep(2., .6, noise));
 
             gl_FragColor = vec4(col, .6);
         } 

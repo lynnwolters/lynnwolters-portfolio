@@ -10,10 +10,10 @@
     <ul>
         <li><a href="#">Portfolio ©2023</a></li>
         <ul>
-            <li><button>About</button></li>
-            <li><button>Skills</button></li>
-            <li><button>Experience</button></li>
-            <li><button>Work</button></li>
+            <li><button class="button-animation-1">About</button></li>
+            <li><button class="button-animation-1">Skills</button></li>
+            <li><button class="button-animation-1">Experience</button></li>
+            <li><button class="button-animation-1">Work</button></li>
         </ul>
         <li><button>Contact</button></li>
     </ul>
@@ -75,7 +75,7 @@
         list-style: none;
     }
 
-    .desktop-menu > ul > li:nth-of-type(1) a {
+    .desktop-menu > ul > li:nth-of-type(1) a {        
         font-family: var(--font-family-1);
         font-size: var(--font-size-4);
         color: var(--color-1);
