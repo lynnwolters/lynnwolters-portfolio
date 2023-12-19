@@ -58,7 +58,7 @@
     }
 
     section > div:nth-of-type(1) h2 {
-        opacity: .2;
+        opacity: .1;
 
         font-family: var(--font-family-2);
         font-size: var(--font-size-1);

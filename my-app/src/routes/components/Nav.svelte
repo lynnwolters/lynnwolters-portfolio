@@ -189,7 +189,7 @@
             margin: 0 1.5em;
             padding: 0 1.5em;
 
-            border: solid .025em var(--color-1);
+            border: solid .025em var(--color-4);
             border-radius: .7em;
 
             backdrop-filter: blur(8px);
@@ -239,7 +239,7 @@
             margin-top: .5em;
             padding: 1.5em 1.5em;
 
-            border: solid .025em var(--color-1);
+            border: solid .025em var(--color-4);
             border-radius: .7em;
 
             backdrop-filter: blur(8px);

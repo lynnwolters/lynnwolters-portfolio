@@ -178,7 +178,7 @@ function updateSceneSize() {
 
             col = mix(col, vec3(1), smoothstep(2., .2, noise));
 
-            gl_FragColor = vec4(col, .5);
+            gl_FragColor = vec4(col, .6);
         } 
     `
 </script>

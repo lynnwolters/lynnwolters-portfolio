@@ -7,8 +7,10 @@
     import Work from "./components/Work.svelte"
     import Footer from "./components/Footer.svelte"
     import Noise from "./components/Noise.svelte"
+    import Cursor from "./components/Cursor.svelte"
 </script>
 
+<Cursor />
 <Noise />
 <Nav />
 <Header />
