@@ -185,14 +185,16 @@ function updateSceneSize() {
 
 <style>
     .container {
-        height: 100vh;
-        user-select: none;
+        width: 100%;
+        height: 100%;
+
+        position: fixed;
+        top: 0;
+        left: 0;       
+        z-index: -1;
     }
 
     #canvas {
-        position: absolute;
-        top: 0;
-        left: 0;
         pointer-events: none;
     }
 </style>
