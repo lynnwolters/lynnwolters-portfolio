@@ -1,25 +1,7 @@
-<script>
-    import { onMount } from 'svelte'
-
-    onMount(() => {
-        const btn = document.querySelector('.button-animation-2')
-        const bg = btn.querySelector('.bg-button-animation-2')
-
-        const handleOrigin = (e) => {
-            bg.style.left = `${e.pageX - btn.offsetLeft}px`
-            bg.style.top = `${e.pageY - btn.offsetTop}px`
-        }
-
-        btn.addEventListener('mouseenter', handleOrigin)
-        btn.addEventListener('mouseleave', handleOrigin);
-    })
-</script>
-
 <footer>
     <h2>Want to make awesome things together? Send me an em<span>ail hi@lynnwolters.nl and I will contact a.s.a.p.!</span></h2>
-    <button class="button-animation-2">
-        <span class="label-button-animation-2">Go to top</span>
-        <span class="bg-button-animation-2"></span>
+    <button>
+        <p>Go to top</p>
     </button>
     <nav>
         <p>Copyright ©2023 Lynn Wolters</p>

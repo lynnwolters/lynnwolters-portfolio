@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 } 
 
 
@@ -63,57 +64,13 @@ a, button {
 
 
 
-/* BUTTON ANIMATION 2 */
-
-.button-animation-2 {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.label-button-animation-2 {
-    position: relative;
-    transition: color 400ms ease-out;
-    z-index: 1;
-}
-
-.button-animation-2:hover .label-button-animation-2 {
-    color: var(--color-2);
-}
-
-.bg-button-animation-2 {
-    min-width: 225%;
-    min-height: 225%;
-    aspect-ratio: 1;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    border-radius: 50%;
-
-    background-color: var(--color-1);
-    
-    transform: translate(-50%, -50%) scale(0);
-    transition: transform 500ms ease-out;
-}
-
-.button-animation-2:hover .bg-button-animation-2 {
-    transform: translate(-50%, -50%) scale(1);
-}
-
-
-
-
-
-
 :root {
     /* COLORS */
     
     --color-1: #383838;
     --color-2: #FFFFFF;
     --color-3: #FAFAFA;
-    --color-4: #AFAFAF;
+    --color-4: #c1c1c1;
 
     /* FONTS */
 
