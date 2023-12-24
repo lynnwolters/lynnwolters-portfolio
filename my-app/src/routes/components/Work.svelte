@@ -76,7 +76,7 @@
 
     section > div:nth-of-type(2) article {
         grid-column: span 4;
-        height: 40vh;
+        height: 45vh;
 
         display: flex;
         justify-content: space-between;
@@ -132,7 +132,7 @@
         justify-content: center;
         align-items: center;
 
-        margin: 2em 0;
+        margin: 4em 0;
     }
 
     section > div:nth-of-type(2) article div:nth-of-type(2) img {

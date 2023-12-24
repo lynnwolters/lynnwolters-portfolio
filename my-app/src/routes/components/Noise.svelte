@@ -10,8 +10,8 @@ let pointer = new THREE.Vector2(0.5, 0.5)
 let targetPointer = new THREE.Vector2(0.5, 0.5)
 
 const params = {
-    coloring: 0.2,
-    speed: 0.1,
+    coloring: 0.0,
+    speed: 0.0,
 }
 
 onMount(() => {
@@ -178,7 +178,7 @@ function updateSceneSize() {
 
             col = mix(col, vec3(1), smoothstep(2., .6, noise));
 
-            gl_FragColor = vec4(col, .6);
+            gl_FragColor = vec4(col, .5);
         } 
     `
 </script>

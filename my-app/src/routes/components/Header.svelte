@@ -13,7 +13,7 @@
 
 <style>
     header {
-        height: calc(100vh - 7em);
+        height: calc(100vh - 5em);
 
         display: flex;
         align-items: end;

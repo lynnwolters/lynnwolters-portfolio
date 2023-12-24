@@ -1,10 +1,17 @@
+<script>
+
+</script>
+
 <section>
     <h2>While studying, I ga<span>ined over 2,5+ years of work experience in this field.</span></h2>
     <ul>
         <li>
-            <button>
+            <button class="accordion-button">
                 <h3>Student Assistent Front-end Development</h3>
                 <p>Sept 2023 - Now</p>
+                <div class="accordion">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, repellat asperiores non impedit aliquid culpa nesciunt eius laboriosam cum dolor tempora saepe ipsum corrupti delectus veritatis odio vero. Praesentium, quod?</p>
+                </div>
             </button>
         </li>
         <li>
