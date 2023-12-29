@@ -77,7 +77,7 @@
     section > div:nth-of-type(2) article {
         grid-column: span 4;
         height: 45vh;
-
+        
         display: flex;
         justify-content: space-between;
         flex-direction: column;
