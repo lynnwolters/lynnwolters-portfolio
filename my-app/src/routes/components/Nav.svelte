@@ -171,7 +171,7 @@
         }
 
         .mobile-menu {
-            width: calc(100vw - 6em);
+            width: calc(100vw - 3em);
 
             position: fixed;
         }
